@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+section:nth-child(even){
+    background-color: orange;
+} 
+/* position and design back to top scroll  */
+#back-to-top{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height:40px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #fff;
+    color:black;
+    font-size: 22px;
+    transition: all 0.3s linear;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#back-to-top.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+#back-to-top:hover{
+    background-color: #43bda0;
+    color:#fff;
+}
